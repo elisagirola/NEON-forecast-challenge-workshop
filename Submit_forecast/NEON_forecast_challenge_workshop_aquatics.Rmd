@@ -244,7 +244,7 @@ Then we can use the ensembles to produce uncertainty in the water temperature fo
 # New forecast only available at 5am UTC the next day
 
 forecast_date <- Sys.Date() 
-noaa_date <- forecast_date - days(1)
+noaa_date <- forecast_date - days(2)
 
 noaa_future_s3 <- neon4cast::noaa_stage2(start_date = as.character(noaa_date))
 variables <- c("air_temperature")
